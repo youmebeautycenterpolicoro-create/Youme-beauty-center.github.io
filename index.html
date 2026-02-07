@@ -1,1 +1,470 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youme Beauty Center - Policoro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
+        body {
+            background-color: #f8f5f2;
+            color: #5a4a42;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #d4a5a5;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .section {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            padding: 2rem;
+        }
+
+        .section h2 {
+            color: #d4a5a5;
+            border-bottom: 2px solid #d4a5a5;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .service-card {
+            background-color: #fdf9f7;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            color: #b08888;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .service-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.8rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px dashed #e0d8d5;
+        }
+
+        .service-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .service-name {
+            font-weight: 500;
+        }
+
+        .service-price {
+            color: #d4a5a5;
+            font-weight: 600;
+        }
+
+        .contact-info {
+            background-color: #b08888;
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-info a {
+            color: #ffd6d6;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .opening-hours {
+            margin-top: 1.5rem;
+            text-align: left;
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .opening-hours h4 {
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+        }
+
+        .opening-hours ul {
+            list-style: none;
+        }
+
+        .opening-hours li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #d4a5a5;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #b08888;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #5a4a42;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Youme Beauty Center</h1>
+        <p>Manicure, Pedicure e Trattamenti Estetici a Policoro</p>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>Manicure</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-item">
+                        <span class="service-name">Manicure Estetico</span>
+                        <span class="service-price">12€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Manicure Estetico Smalto O.P.I.</span>
+                        <span class="service-price">15€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Manicure Estetico Semipermanente</span>
+                        <span class="service-price">25€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Solo Smalto O.P.I.</span>
+                        <span class="service-price">10€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Solo Semipermanente</span>
+                        <span class="service-price">22€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Rimozione Semipermanente</span>
+                        <span class="service-price">5€</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Pedicure</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-item">
+                        <span class="service-name">Pedicure Estetico</span>
+                        <span class="service-price">25€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Pedicure Estetico Semipermanente</span>
+                        <span class="service-price">35€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Pedicure Estetico + Smalto O.P.I.</span>
+                        <span class="service-price">28€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Solo Semipermanente</span>
+                        <span class="service-price">25€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Solo Smalto</span>
+                        <span class="service-price">10€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">+ Curativo</span>
+                        <span class="service-price">+5€</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Ricostruzione Gel</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-item">
+                        <span class="service-name">Ricostruzione Gel Cartina/Tips</span>
+                        <span class="service-price">Da 50€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Copertura Gel</span>
+                        <span class="service-price">Da 40€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Ritocco/Refill</span>
+                        <span class="service-price">Da 40€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Ricostruzione Gel 1 Dito</span>
+                        <span class="service-price">5€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Rimozione Gel</span>
+                        <span class="service-price">5€</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Decorazione</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-item">
+                        <span class="service-name">Disegno Brillantini</span>
+                        <span class="service-price">Da 1€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">French / Babyboomer / Cat Eye</span>
+                        <span class="service-price">Da 1€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Effetto Specchio/Chrome</span>
+                        <span class="service-price">5€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Massaggio Ceretta</span>
+                        <span class="service-price">8€</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Depilazione/Ceretta</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-item">
+                        <span class="service-name">Sopracciglia+Baffetti</span>
+                        <span class="service-price">8€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Ascelle</span>
+                        <span class="service-price">10€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Braccia</span>
+                        <span class="service-price">15€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Inguine Parziale</span>
+                        <span class="service-price">12€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Inguine Totale</span>
+                        <span class="service-price">15€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Mezza Gambe</span>
+                        <span class="service-price">15€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Gambe Totale</span>
+                        <span class="service-price">25€</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Extension delle Ciglia</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-item">
+                        <span class="service-name">Extension Classica</span>
+                        <span class="service-price">Da 70€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Extension Volume Y 3D/4D</span>
+                        <span class="service-price">Da 80€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Extension Wispy</span>
+                        <span class="service-price">Da 90€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Refill Ciglia</span>
+                        <span class="service-price">50€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Sotto Ciglia</span>
+                        <span class="service-price">20€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Rimozione Ciglia</span>
+                        <span class="service-price">15€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Laminazione Ciglia</span>
+                        <span class="service-price">50€</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Trattamenti Viso</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-item">
+                        <span class="service-name">Pulizia del Viso (45min.)</span>
+                        <span class="service-price">35€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Trattamento Idratazione Profonda (60min.)</span>
+                        <span class="service-price">50€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Trattamento Glass Skin (60min.)</span>
+                        <span class="service-price">60€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Trattamento Anti-età (60min.)</span>
+                        <span class="service-price">60€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Trattamento Hydra Vacuum (70min.)</span>
+                        <span class="service-price">70€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Ringiovanimento Occhi (20min.)</span>
+                        <span class="service-price">25€</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Massaggio Corpo</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-item">
+                        <span class="service-name">Massaggio Relax</span>
+                        <span class="service-price">30min./35€, 60min./65€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Massaggio Rilassante Scalp Treatment</span>
+                        <span class="service-price">30min./35€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Massaggio Snellente</span>
+                        <span class="service-price">30min./40€, 60min./75€</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="service-name">Trattamento con Fango (50min.)</span>
+                        <span class="service-price">45€</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <h3>Contattaci</h3>
+            <p>Indirizzo: [Inserisci il tuo indirizzo, Policoro (MT)]</p>
+            <p>Telefono: <a href="tel:[Il tuo numero]">[Il tuo numero]</a></p>
+            <p>Email: <a href="mailto:[La tua email]">[La tua email]</a></p>
+            <p>Instagram: <a href="https://instagram.com/[Il tuo profilo]">@[Il tuo profilo]</a></p>
+            <div class="opening-hours">
+                <h4>Orari di Apertura</h4>
+                <ul>
+                    <li><span>Lunedì</span><span>Chiuso</span></li>
+                    <li><span>Martedì-Venerdì</span><span>9:00 - 19:00</span></li>
+                    <li><span>Sabato</span><span>9:00 - 18:00</span></li>
+                    <li><span>Domenica</span><span>Chiuso</span></li>
+                </ul>
+            </div>
+            <a href="https://wa.me/[Il tuo numero WhatsApp]" class="btn">Prenota Ora su WhatsApp</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Youme Beauty Center - Tutti i diritti riservati</p>
+    </footer>
+</body>
+</html>
